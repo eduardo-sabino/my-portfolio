@@ -140,4 +140,7 @@ button {
   .c-left{
     display: none;
   }
+  .input{
+    width: 80%;
+  }
 }

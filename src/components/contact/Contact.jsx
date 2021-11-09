@@ -64,15 +64,15 @@ const Contact = ({contactRef, hasContactButtonBeenClick, onContactButtonClick}) 
               <b>O que você tem em mente?</b> Entre em contato! Estou sempre disponível para trabalhos novos.
             </p>
             <form ref={formRef} onSubmit={handleSubmit}>
-              <input type="text" placeholder="Nome" name="user_name" 
+              <input className="input" type="text" placeholder="Nome" name="user_name" 
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-              <input type="text" placeholder="Assunto" name="user_subject" 
+              <input className="input" type="text" placeholder="Assunto" name="user_subject" 
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
               />
-              <input type="email" placeholder="Email" name="user_email"
+              <input className="input" type="email" placeholder="Email" name="user_email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
