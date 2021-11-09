@@ -1,0 +1,143 @@
+.c {
+  height: 100vh;
+  min-height: 35rem;
+  position: relative;
+  background-color: rgb(242, 244, 247);
+  padding: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-bg {
+  position: absolute;
+  width: .6rem;
+  height: 100%;
+  background-color: #6C63FF;
+  left: 0;
+  top: 0;
+}
+
+.c-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.c-left {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-left-wrapper{
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.c-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  max-width: 38rem;
+}
+
+.c-right-rwapper{
+  max-width: 32rem;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 80%;
+}
+.c-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0px;
+  font-weight: 500;
+  width: 100%;
+  color: #777777;
+}
+
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.c-desc {
+  font-weight: 200;
+}
+
+form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  background-color: rgb(242, 244, 247);
+}
+
+textarea {
+  display: block;
+  width: 95%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: #6C63FF;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+}
+@media screen and (max-width: 1065px) {
+  .c-left{
+    align-items: flex-start;
+  }
+}
+.disabled-button{
+  cursor: not-allowed;
+  background-color: #7d7ca0;
+}
+
+
+@media screen and (max-width: 980px) {
+  .c{
+    width: 100vw;
+  }
+  .c-title{
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width:850px) {
+  .c{
+    justify-content: flex-start;
+  }
+  .c-left{
+    display: none;
+  }
+}

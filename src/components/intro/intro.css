@@ -1,0 +1,140 @@
+.i {
+  display: flex;
+  box-sizing: border-box;
+  height: 100vh;
+  justify-content: center; 
+  padding: 3rem;
+}
+
+.i-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 30rem;
+  margin: 0 4rem 0 0;
+}
+.i-desc{
+  color: rgb(46, 46, 46);
+  max-width: 25rem;
+}
+
+.i-right {
+  width: 30rem;
+  position: relative;
+  overflow: hidden;
+  max-width: 38rem;
+}
+
+.intro-wrappar{
+  position: relative;
+  overflow: hidden;
+}
+.bg-img{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -4rem;
+  max-width: 60%;
+  z-index: 1;
+}
+
+.i-left-wrapper {
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 3;
+}
+
+.i-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.i-name {
+  font-size: 60px;
+  margin-top: .1rem;
+  margin-bottom: 0.9rem;
+  font-weight: bolder;
+}
+
+.i-button{
+  margin-top: 1.1rem;
+  padding: .6rem 2rem;
+  font-size: .9rem;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.i-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.i-bg {  
+  -webkit-clip-path: circle(50% at 50% 50%); clip-path: circle(50% at 50% 50%);
+  background-color: #754db6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 10rem;
+  right: -10rem;
+}
+
+@media screen and (max-width: 1065px) {
+  .i{
+    justify-content: flex-start;
+  }
+  .bg-img{
+    max-width: 40%;
+    right: 0;
+  }
+  .i-right{
+    display: none;
+  }
+  .i-left{
+    max-width: 40rem;
+  }
+}
+
+/* TODO */
+
+@media screen and (max-width:850px) {
+  .i{
+    justify-content: center;
+  }
+
+  .i-right, .bg-img{
+    display: none;
+  }
+  .i-left{
+    width: 100vw;
+    margin: 0;
+  }
+  .i-left-wrapper{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .i-desc{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .i{
+    justify-content: flex-start;
+  }
+  .i-left-wrapper{
+    align-items: flex-start;
+  }
+
+}
