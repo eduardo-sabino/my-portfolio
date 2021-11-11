@@ -1,5 +1,7 @@
 import netflixImg from "./img/netflix.png"
+import huddleImg from "./img/huddle.png"
 import dashboardImg from "./img/dashboard.png"
+
 export const products = [
   {
     id: 1,
@@ -13,13 +15,13 @@ export const products = [
     img: dashboardImg,
     desc: "Essa é uma aplicação front-end focada no design interatívo. Com conceitos de UI Design, pude criar uma navegação amigável e um dashboard que seja simples de ser usado por qualquer usuário. As bibliotecas usadas nesse projeto estão listadas abaixo:",
     title: "Página de Admin",
-    tech: ["React", "Css", "Html", "MUI"],
+    tech: ["React", "Node", "Css", "Html", "MUI"],
   },
-  /* {
+  {
     id: 3,
-    img: netflixImg,
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quis enim laborum obcaecati repudiandae praesentium, vitae reprehenderit soluta suscipit numquam?",
-    title: "Social media",
-    tech: ["React", "Css", "Html", "MUI"],
-  }, */
+    img: huddleImg,
+    desc: "Essa landing page é um dos meus projetos usando Styled Components. pude criar essa aplicação tendo como base um dos 'challenges' da Frontend Mentor, plataforma onde se pode resolver desafios reais de HTML, CSS e JavaScript enquanto trabalha com designs profissionais. As bibliotecas usadas nesse projeto estão listadas abaixo:",
+    title: "Landing Page da Huddle",
+    tech: ["React", "Node", "Styled Components", "React Icons"],
+  },
 ];
